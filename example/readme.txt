@@ -1,6 +1,7 @@
-installation instructions
+installation instructions---using python 3.8.5
 pip install mysqlclient
 pip install django
+
 
 django-admin startproject myproject01
 django-admin startapp example
