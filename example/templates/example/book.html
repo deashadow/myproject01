@@ -1,0 +1,25 @@
+<head>
+    <title>Book Page</title>
+</head>
+{% comment %} <body>
+<form>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">GO</button>
+</form>
+</body>
+</html> {% endcomment %}
+
+<head>
+    <title>Book Page</title>
+</head>
+<body>
+<form action="/book" method="POST">
+    {% csrf_token %}
+    <table border="1">
+    {{form.as_table}}
+    <tr><td colspan="2"><button type="submit">GO</button></td></tr>
+    </table>
+</form>
+</body>
+</html>
