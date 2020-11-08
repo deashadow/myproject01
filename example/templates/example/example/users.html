@@ -1,0 +1,15 @@
+<html>
+<body>
+<table>
+<tr><th>Id</th><th>Username</th><th>Password</th><th>Display Name</th></tr>
+{% for user in users%}
+<tr><td><a href="/editUser/{{user.id}}">{{user.id}}</a></td><td>{{user.username}}</td>
+    <td>{{user.password}}</td><td>{{user.displayname}}</td>
+</tr>
+{% endfor %}
+<tr><td colspan='4'><a href='/'>Back</a></td></tr>
+</table>
+</body>
+</html>
+
+
